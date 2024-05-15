@@ -154,7 +154,7 @@ article p::first-letter {
 	max-height: 15em;
 	gap: 1em;
 }
-.bio-photo {
+.article-photo {
 	/* margin: 0 1em; */
 	overflow: hidden;
 	border-radius: 0.75em;
@@ -200,7 +200,7 @@ div.anchor {
 	border-color: #188732;
 }
 #home-top-img {
-	background-image: url('/images/hiking.jpg');
+	background-image: url('../images/hiking.jpg');
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
