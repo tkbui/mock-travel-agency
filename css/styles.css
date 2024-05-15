@@ -1,0 +1,200 @@
+/* reset styles */
+html {
+	font-size: 20px;
+}
+a,
+article,
+body,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+img,
+li,
+nav,
+p,
+ul {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+a:link {
+	text-decoration: none;
+}
+
+/* debug - to delete */
+* {
+	/* border: 1px red solid; */
+}
+
+/* general theme */
+body,
+html {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #181c87;
+}
+p,
+ul,
+li {
+	color: #313131;
+}
+::selection {
+	background-color: #188783;
+	color: white;
+}
+
+/* navbar */
+nav {
+	align-items: center;
+	background-color: white;
+	border-bottom: 2px solid #313131;
+	display: flex;
+	/* height: 3.5em; */
+	justify-content: space-evenly;
+	padding: 0.5em 1em;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+#nav-img-div {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	padding-right: 1em;
+}
+#nav-img-div img {
+	vertical-align: middle;
+}
+#nav-link-div {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+}
+nav a:link,
+nav a:visited {
+	color: #313131;
+	transition: 0.3s;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+	font-weight: 600;
+}
+nav a:hover:nth-of-type(odd),
+nav a:focus:nth-of-type(odd),
+nav a:active:nth-of-type(odd) {
+	color: #188783;
+}
+nav a:hover:nth-of-type(even),
+nav a:focus:nth-of-type(even),
+nav a:active:nth-of-type(even) {
+	color: #188732;
+}
+
+/* main content */
+h1,
+h2 {
+	text-decoration: 2px underline #ed6b15;
+}
+article {
+	background-color: #faf7f2;
+	border: 2px solid #313131;
+	border-radius: 1em;
+	margin: 2em auto;
+	max-width: 50%;
+	padding: 1.5em 2em;
+	box-shadow: 0 0.2em 0.5em 0em #cbcbcb;
+}
+article p,
+article ul,
+h3 {
+	margin: 0.5em 0 0.3em;
+	line-height: 1.5em;
+}
+article p a:link,
+article p a:visited {
+	color: #181c87;
+	font-weight: 600;
+	transition: 0.3s;
+}
+article p a:focus,
+article p a:hover {
+	color: #ed6b15;
+}
+article ul {
+	padding-left: 1em;
+}
+article p::first-letter {
+	font-size: 1.5em;
+}
+.list-detail {
+	font-weight: 600;
+}
+.punctuation {
+	color: #188732;
+}
+div.anchor {
+	/* https://jsfiddle.net/kizu/gfXJJ/ */
+	margin: -4.15em;
+	position: absolute;
+}
+
+/* home page top photo section */
+#home-top-img-text {
+	color: white;
+	font-weight: 700;
+	font-size: 3em;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+#home-top-img-button {
+	background-color: #181c87;
+	border: 1px solid #181c87;
+	color: white;
+	font-weight: 500;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	transition: 0.3s;
+	position: relative;
+	top: 85%;
+	left: 85%;
+}
+#home-top-img-button:hover {
+	background-color: #188732;
+	border-color: #188732;
+}
+#home-top-img {
+	background-image: url('/images/hiking.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* footer */
+footer {
+	background-color: #181c87;
+	color: white;
+}
+
+/* media queries */
+/* add user-friendly option for disabling smooth scroll */
+/* https://gomakethings.com/smooth-scrolling-links-with-only-css/ */
