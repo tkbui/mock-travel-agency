@@ -58,16 +58,40 @@
 			</p>
 			<form action="contact.html">
 				<h3>Submit Your Inquiries Here!</h3>
-				<div id="form-contact-info">
-					<label for="sender-name"> <span class="required">* </span>Name: </label>
-					<input id="sender-name" name="sender-name" placeholder="Jane Doe" required />
+				<div class="input-group">
+					<div>
+						<label for="sender-name">
+							<span class="required">* </span>Name:
+							<input id="sender-name" name="sender-name" placeholder="Jane Doe" required />
+						</label>
+					</div>
+					<div>
+						<label for="email">
+							<span class="required">* </span>Email:
+							<input
+								id="email"
+								name="email"
+								type="email"
+								placeholder="janedoe@example.com"
+								required
+							/>
+						</label>
+					</div>
 				</div>
-				<label for="email"> <span class="required">* </span>Email: </label>
-				<input id="email" name="email" placeholder="janedoe@example.com" required />
-				<label for="subject"> <span class="required">* </span>Subject: </label>
-				<input id="subject" name="subject" placeholder="Question about Japan" required />
-				<label for="message"> <span class="required">* </span>Enter your message:<br /> </label>
-				<textarea id="message" name="message" placeholder="I want to ask..." required></textarea>
+				<div class="input-group">
+					<label for="subject">
+						<span class="required">* </span>Subject:
+						<input id="subject" name="subject" placeholder="Question about Japan" required />
+					</label>
+					<label for="phone">
+						Phone:
+						<input id="phone" name="phone" type="tel" placeholder="(555)-555-5555" />
+					</label>
+				</div>
+				<div>
+					<label for="message"> <span class="required">* </span>Enter your message:<br /> </label>
+					<textarea id="message" name="message" placeholder="I want to ask..." required></textarea>
+				</div>
 				<input id="submit-button" type="submit" value="SUBMIT." />
 			</form>
 		</article>
