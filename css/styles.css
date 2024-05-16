@@ -180,11 +180,6 @@ figure {
 #croissant {
 	object-position: 0 70%;
 }
-div.anchor {
-	/* https://jsfiddle.net/kizu/gfXJJ/ */
-	margin: -4.15em;
-	position: absolute;
-}
 
 /* home page top photo section */
 #home-top-corner-section {
