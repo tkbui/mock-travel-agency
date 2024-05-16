@@ -319,12 +319,6 @@ table img {
 	max-width: 100%;
 }
 
-/* footer */
-footer {
-	background-color: #181c87;
-	color: white;
-}
-
 /* media queries */
 /* add user-friendly option for disabling smooth scroll */
 /* https://gomakethings.com/smooth-scrolling-links-with-only-css/ */
